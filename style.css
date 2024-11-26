@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+  }
+  
+  #timer-display {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  #status-display {
+    color: #6c757d; /* Bootstrapのセカンダリカラー */
+  }
+  
+  #status-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
