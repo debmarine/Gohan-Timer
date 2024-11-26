@@ -6,11 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const beepSound = document.getElementById("beep-sound");
     const statusSound = document.getElementById("status-sound");
     const startButton = document.getElementById("start-timer");
+    const elementCountDisplay = document.getElementById("element-count");
 
     let settings = {}; // 設定データを格納
     let currentSequence = []; // 現在の設定の配列
     let currentIndex = 0; // 現在の配列インデックス
     let intervalId = null; // タイマーのID
+    let elementCount = 0; //新聞の個数
 
     // 設定データを取得してドロップダウンを構築
     fetch("setting.json")
@@ -25,6 +27,20 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch((error) => console.error("設定データの取得に失敗しました:", error));
+
+    // ドロップダウンの変更イベントリスナー
+    settingsDropdown.addEventListener("change", () => {
+        const selectedSetting = settingsDropdown.value;
+        if (settings[selectedSetting]) {
+            // 条件に合う要素をカウント
+            elementCount = settings[selectedSetting].filter(item => 
+                item.status === "left" || item.status === "right"
+            ).length;
+            elementCountDisplay.textContent = `新聞紙を ${elementCount} 個つくるのだ`;
+        } else {
+            elementCountDisplay.textContent = "";
+        }
+    });
 
     // Wake Lockを有効にする関数
     async function enableWakeLock() {
@@ -72,6 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
         statusSound.src = `${status}.wav`; // statusに基づいた音声を設定
         statusSound.play(); // 音声を再生
 
+        // 新聞紙の残りカウント
+        if(status === "left" || status === "right"){
+            elementCount--;
+            elementCountDisplay.textContent = `新聞紙の数：あと ${elementCount} 個`;
+        }
+
         // タイマー処理
         intervalId = setInterval(() => {
             const minutes = Math.floor(remainingTime / 60);
@@ -79,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
             timerDisplay.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 
             if (remainingTime <= 0) {
+                
                 clearInterval(intervalId);
                 currentIndex++;
                 startTimer(sequence); // 次の配列に移動
