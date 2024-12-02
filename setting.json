@@ -11,9 +11,9 @@
       { "seconds": 60, "status": "right" },
       { "seconds": 60, "status": "left" },
       { "seconds": 10, "status": "right" },
-      { "seconds": 600, "status": "break" },
-      { "seconds": 5, "status": "left" },
-      { "seconds": 300, "status": "murasi" },
+      { "seconds": 590, "status": "break" },
+      { "seconds": 10, "status": "left" },
+      { "seconds": 290, "status": "murasi" },
       { "seconds": 0, "status": "complete" }
     ],
     "2合": [
@@ -31,9 +31,9 @@
         { "seconds": 60, "status": "right" },
         { "seconds": 60, "status": "left" },
         { "seconds": 10, "status": "right" },
-        { "seconds": 600, "status": "break" },
-        { "seconds": 5, "status": "left" },
-        { "seconds": 300, "status": "murasi" },
+        { "seconds": 590, "status": "break" },
+        { "seconds": 10, "status": "left" },
+        { "seconds": 290, "status": "murasi" },
         { "seconds": 0, "status": "complete" }
     ],
     "3合": [
@@ -53,10 +53,10 @@
         { "seconds": 60, "status": "left" },
         { "seconds": 60, "status": "right" },
         { "seconds": 60, "status": "left" },
-        { "seconds": 60, "status": "right" },
-        { "seconds": 600, "status": "break" },
-        { "seconds": 5, "status": "left" },
-        { "seconds": 300, "status": "murasi" },
+        { "seconds": 10, "status": "right" },
+        { "seconds": 590, "status": "break" },
+        { "seconds": 10, "status": "left" },
+        { "seconds": 290, "status": "murasi" },
         { "seconds": 0, "status": "complete" }
     ],
     "4合": [
@@ -78,10 +78,10 @@
         { "seconds": 60, "status": "left" },
         { "seconds": 60, "status": "right" },
         { "seconds": 60, "status": "left" },
-        { "seconds": 60, "status": "right" },
-        { "seconds": 600, "status": "break" },
-        { "seconds": 5, "status": "left" },
-        { "seconds": 300, "status": "murasi" },
+        { "seconds": 10, "status": "right" },
+        { "seconds": 590, "status": "break" },
+        { "seconds": 10, "status": "left" },
+        { "seconds": 290, "status": "murasi" },
         { "seconds": 0, "status": "complete" }
     ],
     "5合": [
@@ -105,19 +105,19 @@
         { "seconds": 60, "status": "left" },
         { "seconds": 60, "status": "right" },
         { "seconds": 60, "status": "left" },
-        { "seconds": 60, "status": "right" },
-        { "seconds": 600, "status": "break" },
-        { "seconds": 5, "status": "left" },
-        { "seconds": 300, "status": "murasi" },
+        { "seconds": 10, "status": "right" },
+        { "seconds": 590, "status": "break" },
+        { "seconds": 10, "status": "left" },
+        { "seconds": 290, "status": "murasi" },
         { "seconds": 0, "status": "complete" }
     ],
     "テスト": [
-      { "seconds": 10, "status": "left" },
       { "seconds": 10, "status": "right" },
-      { "seconds": 8, "status": "left" },
+      { "seconds": 10, "status": "left" },
       { "seconds": 8, "status": "right" },
+      { "seconds": 8, "status": "left" },
       { "seconds": 15, "status": "break" },
-      { "seconds": 5, "status": "left" },
+      { "seconds": 5, "status": "right" },
       { "seconds": 10, "status": "murasi" },
       { "seconds": 0, "status": "complete" }
     ]
