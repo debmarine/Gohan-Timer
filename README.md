@@ -2,6 +2,8 @@
 
 **Gohan Timer** は、Tiger 魔法のかまどごはんの新聞紙投入タイミングを適切にお知らせするためのタイマーです。
 
+<a href="https://debmarine.github.io/Gohan-Timer/">ごはんタイマー ウェブサイト</a>
+
 ---
 
 ## **使用方法**
