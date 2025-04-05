@@ -9,10 +9,14 @@
   <!-- カスタムCSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
+
+
 <body class="bg-light">
   <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-lg-6 col-md-8 col-sm-10 text-center">
+        
         <h1 class="mb-4">魔法のかまどごはん<br>タイマー</h1>
         <div class="mb-3">
           <select id="settings" class="form-select">
@@ -24,6 +28,11 @@
         <div id="status-display" class="fs-4 my-3 text-secondary" hidden>状態: 未選択</div>
         <img id="status-image" alt="Status Image" style="display: none;">
         <button id="start-timer" class="btn btn-primary btn-lg mt-4">開始</button>
+        <br/>
+        <br/>
+        <a href="manual.html" target="_blank" class="btn btn-secondary btn-lg mt-4">
+          使い方
+        </a>
         <audio id="beep-sound" src="beep.mp3" preload="auto"></audio>
         <audio id="status-sound" preload="auto"></audio>
       </div>
